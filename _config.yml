@@ -2,9 +2,10 @@ name: joaorb64
 description: João Ribeiro Bezerra
 markdown: redcarpet
 highlighter: pygments
-github: https://www.github.com/joaorb64
-about: Computer scientist. I work with games and games development. I also love Super Smash Bros.
+about: Computer scientist. I work with games and game development. I also love Super Smash Bros.
+
 urls:
     - text: github
       url: https://github.com/joaorb64
-#baseurl: '/simplygrey-jekyll'
+    - text: twitter
+      url: https://twitter.com/joao_shino

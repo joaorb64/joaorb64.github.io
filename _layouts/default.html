@@ -23,16 +23,23 @@
 
 			<div class="col-sm-3">
 				<h1>{{ site.name }}</h1>
-				{{ site.description }}
+				<p>{{ site.description }}</p>
 				
 				<img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
 
 				<strong>navigation</strong><br />
+				<p>
 				<a href="{{ site.baseurl }}/">home</a> <br />
+				<a href="{{ site.baseurl }}/projects/">projects</a> <br />
+				</p>
+				
+				<strong>external</strong><br />
+				<p>
 				{% for i in site.urls %}
 					<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
 				{% endfor %}
-				
+				</p>
+
 				{% if site.about %}
 				<div id="about">
 					<strong>about</strong><br />
@@ -46,10 +53,7 @@
 				{{ content }}
 				
 				<footer>
-					&copy; {{ site.name }}
-					{% if site.github %} 
-						- <a href="{{ site.github }}">{{ site.github }}</a>
-					{% endif %}
+					&copy; João Ribeiro Bezerra - powered by Jekyll, GitHub
 				</footer>
 			</div>
 		

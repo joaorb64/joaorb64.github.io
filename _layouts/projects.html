@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1>Projects</h1>
+
+<div class="content">
+	<div class="post">{{ content }}
+		{% for i in site.data.projects %}
+			<h4>{{ i.name }}</h4>
+			<img src="{{ site.baseurl }}/projects/img/{{ i.name }}.png" width=100% />
+		{% endfor %}
+	</div>
+</div>
+
