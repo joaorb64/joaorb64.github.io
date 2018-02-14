@@ -9,7 +9,7 @@
 
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-        
+
         <!-- Bootstrap core CSS -->
     	<link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,10 +21,10 @@
 
 		<div class="container">
 
-			<div class="col-sm-3">
+			<div class="col-sm-3" style="width: 170px">
 				<h1>{{ site.name }}</h1>
 				<p>{{ site.description }}</p>
-				
+
 				<img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
 
 				<strong>navigation</strong><br />
@@ -32,7 +32,7 @@
 				<a href="{{ site.baseurl }}/">home</a> <br />
 				<a href="{{ site.baseurl }}/projects/">projects</a> <br />
 				</p>
-				
+
 				<strong>external</strong><br />
 				<p>
 				{% for i in site.urls %}
@@ -49,14 +49,14 @@
 			</div>
 
 			<div class="col-sm-8 col-offset-1">
-				
+
 				{{ content }}
-				
+
 				<footer>
 					&copy; João Ribeiro Bezerra - powered by Jekyll, GitHub
 				</footer>
 			</div>
-		
+
 		</div>
 
 	<!-- Bootstrap core JavaScript
