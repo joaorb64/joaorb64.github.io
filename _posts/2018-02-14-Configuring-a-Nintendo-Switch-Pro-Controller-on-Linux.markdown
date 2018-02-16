@@ -35,3 +35,21 @@ The values for **calibration** were obtained using jstest-gtk.
 The **/dev/input/eventXX** must be replaced by your device's event path. You can get it by using **sudo evtest** on a terminal.
 
 This maps the buttons for their **physical position** rather than their labels. Games will show Xbox button labels, wich are mirrored from Nintendo's: A=B, B=A, X=Y, Y=X.
+
+
+**Update**: 
+Messing up with evdev calibration values, I could get a config that works quite well for Dolphin and Retroarch using SDL input driver.
+
+{% highlight ruby %}
+sudo evdev-joystick --s /dev/input/event11 # this is a command to show the current calibration
+
+Supported Absolute axes:
+  Absolute axis 0x00 (0) (X Axis) (value: 29179, min: 0, max: 58000, flatness: 4095 (=7.06%), fuzz: 255)
+  Absolute axis 0x01 (1) (Y Axis) (value: 37391, min: 6000, max: 65000, flatness: 4095 (=6.30%), fuzz: 255)
+  Absolute axis 0x03 (3) (X Rate Axis) (value: 31568, min: 0, max: 58000, flatness: 4095 (=7.06%), fuzz: 255)
+  Absolute axis 0x04 (4) (Y Rate Axis) (value: 36559, min: 0, max: 70000, flatness: 4095 (=5.85%), fuzz: 255)
+  Absolute axis 0x10 (16) (Hat zero, x axis) (value: 0, min: -1, max: 1, flatness: 0 (=0.00%), fuzz: 0)
+  Absolute axis 0x11 (17) (Hat zero, y axis) (value: 0, min: -1, max: 1, flatness: 0 (=0.00%), fuzz: 0)
+{% endhighlight %}
+
+After having the same issues on Android, I guess it's a config coming from the Linux Kernel and this should be patched to it. Now, I don't have any clue on how to do it.
