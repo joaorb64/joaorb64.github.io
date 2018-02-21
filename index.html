@@ -9,7 +9,7 @@ layout: default
       <li>
         <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         {% if post.comments %}
-          <a href="URL{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">0 Comments</a>
+          <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">0 Comments</a>
         {% endif %}
       </li>
     {% endfor %}
