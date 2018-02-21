@@ -2,6 +2,7 @@
 layout: post
 title:  "Configuring a Nintendo Switch Pro Controller on Linux"
 date:   2018-02-14
+comments: true
 categories:
 ---
 
