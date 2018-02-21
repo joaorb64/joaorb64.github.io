@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}</title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
 
-        <!-- Bootstrap core CSS -->
-    	<link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+</head>
 
-    </head>
-    <body>
+<body class="layout-body">
 
-		<div class="container">
+  <div class="layout-container">
 
-			<div class="col-sm-3" style="width: 170px">
-				<h1>{{ site.name }}</h1>
-				<p>{{ site.description }}</p>
+    <div class="layout-leftbar">
+      <h1>{{ site.name }}</h1>
+      <p>{{ site.description }}</p>
 
-				<img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
+      <img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
 
-				<strong>navigation</strong><br />
-				<p>
-				<a href="{{ site.baseurl }}/">home</a> <br />
-				<a href="{{ site.baseurl }}/projects/">projects</a> <br />
-				</p>
+      <strong>navigation</strong><br />
+      <p>
+        <a href="{{ site.baseurl }}/">home</a> <br />
+        <a href="{{ site.baseurl }}/projects/">projects</a> <br />
+      </p>
 
-				<strong>external</strong><br />
-				<p>
-				{% for i in site.urls %}
-					<a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
-				{% endfor %}
-				</p>
+      <strong>external</strong><br />
+      <p>
+        {% for i in site.urls %}
+        <a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
+        {% endfor %}
+      </p>
 
-				{% if site.about %}
-				<div id="about">
-					<strong>about</strong><br />
-					{{ site.about }}
-				</div>
-				{% endif %}
-			</div>
+      {% if site.about %}
+      <div id="about">
+        <strong>about</strong><br />
+        {{ site.about }}
+      </div>
+      {% endif %}
+    </div>
 
-			<div class="col-sm-8 col-offset-1">
+    <div class="layout-content">
 
-				{{ content }}
+      {{ content }}
 
-				<footer>
-					&copy; João Ribeiro Bezerra - powered by Jekyll, GitHub
-				</footer>
-			</div>
+      <footer>
+        &copy; João Ribeiro Bezerra - powered by Jekyll, GitHub
+      </footer>
+    </div>
 
-		</div>
+  </div>
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script id="dsq-count-scr" src="//joaorb64-github-io-1.disqus.com/count.js" async></script>
-    </body>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script id="dsq-count-scr" src="//joaorb64-github-io-1.disqus.com/count.js" async></script>
+</body>
 </html>
