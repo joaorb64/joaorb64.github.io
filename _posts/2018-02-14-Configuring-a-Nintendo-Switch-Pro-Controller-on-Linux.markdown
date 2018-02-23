@@ -26,12 +26,12 @@ Steps
 {% highlight ruby %}
 
 # Left stick
-sudo evdev-joystick --e /dev/input/eventX --a 0 --m 5000 --M 52000
-sudo evdev-joystick --e /dev/input/eventX --a 1 --m 10000 --M 60000
+sudo evdev-joystick --e /dev/input/eventX --a 0 --minimum 5000 --maximum 52000
+sudo evdev-joystick --e /dev/input/eventX --a 1 --minimum 10000 --maximum 60000
 
 # Right stick
-sudo evdev-joystick --e /dev/input/eventX --a 3 --m 8000 --M 52000
-sudo evdev-joystick --e /dev/input/eventX --a 4 --m 10000 --M 60000
+sudo evdev-joystick --e /dev/input/eventX --a 3 --minimum 8000 --maximum 52000
+sudo evdev-joystick --e /dev/input/eventX --a 4 --minimum 10000 --maximum 60000
 
 # You can check the current calibration with this command
 sudo evdev-joystick --s /dev/input/eventX
