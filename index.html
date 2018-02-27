@@ -10,7 +10,7 @@ layout: default
         <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         {% if post.comments %}
           <span class="glyphicon glyphicon-comment"></span>
-          <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">0</a>
+          <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-url="{{ site.baseurl }}{{ post.url }}">0</a>
         {% endif %}
       </li>
     {% endfor %}
