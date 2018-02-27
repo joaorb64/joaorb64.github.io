@@ -1,6 +1,6 @@
 name: joaorb64
 description: João Ribeiro Bezerra
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 about: Computer scientist. I work with games and game development. I also love Super Smash Bros.
 
