@@ -6,7 +6,7 @@ comments: true
 categories:
 ---
 
-Short version
+Quick guide
 ===
 
 There are two main ways of using a Nintendo Switch Pro Controller on Linux while there's no proper driver for it. We'll solve the issue that **the analog sticks don't register full range going right or up** (still no rumble or proper player led indicator until there's a driver specific for it).
