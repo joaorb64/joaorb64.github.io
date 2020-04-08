@@ -1,6 +1,11 @@
 ---
-published: false
+published: true
+title: "Using Nintendo Switch controllers on Linux"
+date: 2020-04-08
+comments: true
+categories:
 ---
+
 You can easly setup and use single joycons, L+R merged joycons and Switch Pro controllers on Linux. Rumble and motion inputs are also supported.
 
 Let's go over the instructions:
