@@ -29,4 +29,7 @@ Extra use case: Cemuhook UDP compatible applications
 You can use your controllers with compatible Cemuhook UDP applications for the motion input, such as Dolphin-Emu, Citra, Cemu, Yuzu, ...
 
 **1.Download [joycond-cemuhook](https://github.com/joaorb64/joycond-cemuhook)**
+
 **2.In a compatible application, enable cemuhook motion input**
+
+
