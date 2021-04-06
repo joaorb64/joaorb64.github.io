@@ -14,16 +14,65 @@ body {
   flex-direction: column;
 }
 
+.layout-container {
+  margin-left: 250px;
+}
+
 .layout-leftbar {
-	font-size: 11px;
+	font-size: 14px;
   color: #666;
 	background-color: #222;
 	box-shadow: 0 0 0 0,0 6px 12px rgba(34,34,34,0.5);
 	padding: 20px;
-	margin-right: 10px;
-	margin-left: 10px;
   order: -1;
-	height: max-content;
+	height: 100vh;
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+}
+
+.layout-leftbar li {
+  list-style: none;
+  padding: 20px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.layout-leftbar a, .layout-leftbar a:link, .layout-leftbar a:active{
+	color: rgba(255,255,255,0.5)
+}
+
+.layout-leftbar a:hover, .layout-leftbar .active {
+  text-decoration: none;
+  color: white !important;
+  opacity: 1;
+}
+
+.layout-leftbar a:hover li, .layout-leftbar .active li {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.social-outer {
+  width: 36px;
+  height: 36px;
+  margin: 4px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.05);
+}
+
+.social-outer .social-inner {
+  opacity: 0.4;
+}
+
+.social-outer:hover .social-inner {
+  opacity: 1;
 }
 
 @media (min-width: 768px){
@@ -35,7 +84,7 @@ body {
     flex: 1;
   }
   .layout-leftbar {
-    flex: 0 0 12em;
+    flex: 0 0 250px;
   }
 }
 
@@ -71,16 +120,6 @@ h3 {
     text-decoration: underline;
 }
 
-a, a:link, a:active {
-    text-decoration: none;
-    color: #8C8C8C;
-}
-
-a:hover {
-    color: #B3B3B3;
-    text-decoration: underline;
-}
-
 /**
  * //////////////////////////////////
  * Right aka content column formatting
@@ -103,7 +142,7 @@ a:hover {
     color: #FFF;
     overflow-x: scroll;
     font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .layout-content .highlight {
@@ -153,13 +192,14 @@ footer div#github {
  */
 
 .layout-leftbar h1 {
+  text-align: center;
 	color: rgba(255,255,255,0.9);
 }
 
 .layout-leftbar strong {
-        font-size: 16px;
-        color: rgba(255,255,255,0.9);
-        font-weight: normal;
+  font-size: 22px;
+  color: rgba(255,255,255,0.9);
+  font-weight: normal;
 }
 
 .layout-leftbar div#about {
@@ -175,10 +215,7 @@ footer div#github {
 	margin-right: auto;
 }
 
-.layout-leftbar a, .layout-leftbar a:link, .layout-leftbar a:active{
-	color: rgba(255,255,255,0.5)
-}
-
 .layout-leftbar p{
+  text-align: center;
 	color: rgba(255,255,255,0.5);
 }

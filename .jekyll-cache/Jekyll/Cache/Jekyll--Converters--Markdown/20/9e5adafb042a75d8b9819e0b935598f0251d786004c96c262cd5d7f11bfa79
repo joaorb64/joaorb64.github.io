@@ -1,0 +1,25 @@
+I"'<p>You can easly setup and use single joycons, L+R merged joycons and Switch Pro controllers on Linux. Rumble and motion inputs are also supported.</p>
+
+<p>Let’s go over the instructions:</p>
+
+<h2 id="steps">Steps</h2>
+
+<p><strong>1.If your Kernel does not have the hid_nintendo driver, install it as a module from <a href="https://github.com/nicman23/dkms-hid-nintendo">dkms-hid-nintendo</a></strong></p>
+
+<p>As of this post’s writing, hid-nintendo is in review on the linux-input mailing list. It lets you connect joycons and the Switch Pro Controller via bluetooth and the Pro Controller via USB.</p>
+
+<p><strong>2.Install the <a href="https://github.com/DanielOgorchock/joycond">joycond</a> daemon/userspace driver</strong></p>
+
+<p>It manages the controllers and exposes their motion inputs. When a controller is connected, the leds will blink waiting for you to press L+R to assign them. You can press SL+SR to use sideways joycons or L+R to merge two joycons as one device. You’ll also need to press L+R to assign a Switch Pro Controller when connected.</p>
+
+<p><strong>And that’s it!</strong></p>
+
+<h2 id="extra-use-case-cemuhook-udp-compatible-applications">Extra use case: Cemuhook UDP compatible applications</h2>
+
+<p>You can use your controllers with compatible Cemuhook UDP applications for the motion input, such as Dolphin-Emu, Citra, Cemu, Yuzu, …</p>
+
+<p><strong>1.Download <a href="https://github.com/joaorb64/joycond-cemuhook">joycond-cemuhook</a></strong></p>
+
+<p><strong>2.In a compatible application, enable cemuhook motion input</strong></p>
+
+:ET

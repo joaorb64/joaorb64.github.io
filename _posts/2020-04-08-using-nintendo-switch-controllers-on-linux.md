@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 title: "Using Nintendo Switch controllers on Linux"
 date: 2020-04-08

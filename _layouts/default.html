@@ -26,28 +26,29 @@
       <h1>{{ site.name }}</h1>
       <p>{{ site.description }}</p>
 
-      <img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
+      <div style="text-align:center">
+        <img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
 
-      <strong>navigation</strong><br />
-      <p>
-        <a href="{{ site.baseurl }}/">home</a> <br />
-	<a href="http://www.powerrankings.com.br">brazilian smash ultimate power rankings website</a> <br />
-        <a href="{{ site.baseurl }}/projects/">projects</a> <br />
-      </p>
-
-      <strong>external</strong><br />
-      <p>
-        {% for i in site.urls %}
-        <a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
-        {% endfor %}
-      </p>
-
-      {% if site.about %}
-      <div id="about">
-        <strong>about</strong><br />
         {{ site.about }}
       </div>
-      {% endif %}
+
+      {% assign current = page.url | downcase | split: '/' %}
+
+      <ul style="padding:0px;margin-top: 20px; margin-bottom: 20px;">
+        <a href="{{ site.baseurl }}/" {% if current[1] == null %}class='active'{% endif %}><li>Blog</li></a>
+        <a href="{{ site.baseurl }}/projects/" {% if current[1] == 'projects' %}class='active'{% endif %}><li>Projects</li></a>
+      </ul>
+
+      <div style="display: flex; place-content: center;">
+        {% for i in site.urls %}
+          <a href="{{i.link}}" target="_blank" class="social-outer">
+            <div class="social-inner" style="width: 22px; height: 22px; background-size: contain;
+            background-repeat: no-repeat; background-position: center;
+            background-image: url({{ site.baseurl }}/img/{{i.site}}.png);">
+            </div>
+          </a>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="layout-content">

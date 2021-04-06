@@ -1,0 +1,81 @@
+I"a(<h2 id="these-are-old-instructions-please-visit-httpsjoaorb64githubio20200408using-nintendo-switch-controllers-on-linuxhtml-for-an-updated-guide">These are old instructions. Please visit https://joaorb64.github.io/2020/04/08/using-nintendo-switch-controllers-on-linux.html for an updated guide.</h2>
+
+<p>There are two main ways of using a Nintendo Switch Pro Controller on Linux while there’s no proper driver for it. We’ll solve the issue that <strong>the analog sticks don’t register full range going right or up</strong> (still no rumble or proper player led indicator until there’s a driver specific for it).</p>
+
+<p>It only works via bluetooth until there are drivers for wired mode.</p>
+
+<p>If you wish to change the calibration values, I recommend <strong>Dolphin Emulator</strong> for checking your calibration for <strong>Method 1</strong> (while configuring a Game Cube controller, the red dot should reach the outer square borders and neutral position should be centralized) and <strong>jstest-gtk</strong> for <strong>Method 2</strong> (use the numbers on the axis bars).</p>
+
+<p>Method 1 is more direct and fixes the evdev device, used for SDL, Steam and recent emulators. Method 2 (xboxdrv) creates virtual joystick, evdev and udev devices, so it works with pretty much anything.</p>
+
+<h2 id="steps">Steps</h2>
+
+<ol>
+  <li>Connect it to your pc via bluetooth. I use blueman and Gnome Bluetooth. LEDs still blink left-right even when connected.</li>
+  <li>Find your device id via “sudo evtest”</li>
+</ol>
+
+<p><strong>Method 1: Calibrate the evdev device</strong></p>
+
+<ol>
+  <li>Configure the calibration as follows, changing from eventX to your device’s id:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># We're defining a temporary variable only for convenivence</span>
+<span class="n">device</span><span class="o">=</span><span class="sr">/dev/in</span><span class="n">put</span><span class="o">/</span><span class="n">eventX</span>
+
+<span class="c1"># Left stick X, Y then right stick X, Y. You can copy/paste this whole block to your terminal</span>
+<span class="n">sudo</span> <span class="n">evdev</span><span class="o">-</span><span class="n">joystick</span> <span class="o">--</span><span class="n">e</span> <span class="vg">$device</span> <span class="o">--</span><span class="n">a</span> <span class="mi">0</span> <span class="o">--</span><span class="n">minimum</span> <span class="mi">5000</span> <span class="o">--</span><span class="n">maximum</span> <span class="mi">52000</span> <span class="o">&amp;</span> <span class="p">\</span>
+<span class="n">sudo</span> <span class="n">evdev</span><span class="o">-</span><span class="n">joystick</span> <span class="o">--</span><span class="n">e</span> <span class="vg">$device</span> <span class="o">--</span><span class="n">a</span> <span class="mi">1</span> <span class="o">--</span><span class="n">minimum</span> <span class="mi">10000</span> <span class="o">--</span><span class="n">maximum</span> <span class="mi">60000</span> <span class="o">&amp;</span> <span class="p">\</span>
+<span class="n">sudo</span> <span class="n">evdev</span><span class="o">-</span><span class="n">joystick</span> <span class="o">--</span><span class="n">e</span> <span class="vg">$device</span> <span class="o">--</span><span class="n">a</span> <span class="mi">3</span> <span class="o">--</span><span class="n">minimum</span> <span class="mi">8000</span> <span class="o">--</span><span class="n">maximum</span> <span class="mi">52000</span> <span class="o">&amp;</span> <span class="p">\</span>
+<span class="n">sudo</span> <span class="n">evdev</span><span class="o">-</span><span class="n">joystick</span> <span class="o">--</span><span class="n">e</span> <span class="vg">$device</span> <span class="o">--</span><span class="n">a</span> <span class="mi">4</span> <span class="o">--</span><span class="n">minimum</span> <span class="mi">10000</span> <span class="o">--</span><span class="n">maximum</span> <span class="mi">60000</span>
+
+<span class="c1"># You can check the current calibration with this command</span>
+<span class="n">sudo</span> <span class="n">evdev</span><span class="o">-</span><span class="n">joystick</span> <span class="o">--</span><span class="n">s</span> <span class="vg">$device</span></code></pre></figure>
+
+<p>And you’re good to go!</p>
+
+<p><strong>Method 2: xboxdrv</strong></p>
+
+<ol>
+  <li>
+    <p>Install xboxdrv</p>
+  </li>
+  <li>
+    <p>Run the following command:</p>
+  </li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">xboxdrv</span> <span class="o">--</span><span class="n">evdev</span> <span class="sr">/dev/in</span><span class="n">put</span><span class="o">/</span><span class="n">eventX</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">silent</span> <span class="o">--</span><span class="n">detach</span><span class="o">-</span><span class="n">kernel</span><span class="o">-</span><span class="n">driver</span> <span class="o">--</span><span class="n">mimic</span><span class="o">-</span><span class="n">xpad</span> <span class="o">--</span><span class="n">trigger</span><span class="o">-</span><span class="n">as</span><span class="o">-</span><span class="n">button</span> <span class="o">--</span><span class="n">force</span><span class="o">-</span><span class="n">feedback</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">evdev</span><span class="o">-</span><span class="n">absmap</span> <span class="no">ABS_X</span><span class="o">=</span><span class="n">x1</span><span class="p">,</span><span class="no">ABS_Y</span><span class="o">=</span><span class="n">y1</span><span class="p">,</span><span class="no">ABS_RX</span><span class="o">=</span><span class="n">x2</span><span class="p">,</span><span class="no">ABS_RY</span><span class="o">=</span><span class="n">y2</span><span class="p">,</span><span class="no">ABS_HAT0X</span><span class="o">=</span><span class="n">dpad_x</span><span class="p">,</span><span class="no">ABS_HAT0Y</span><span class="o">=</span><span class="n">dpad_y</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">evdev</span><span class="o">-</span><span class="n">keymap</span> <span class="no">BTN_TL</span><span class="o">=</span><span class="n">lt</span><span class="p">,</span><span class="no">BTN_TR</span><span class="o">=</span><span class="n">rt</span><span class="p">,</span><span class="no">BTN_SOUTH</span><span class="o">=</span><span class="n">a</span><span class="p">,</span><span class="no">BTN_EAST</span><span class="o">=</span><span class="n">b</span><span class="p">,</span><span class="no">BTN_C</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="no">BTN_NORTH</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="no">BTN_WEST</span><span class="o">=</span><span class="n">lb</span><span class="p">,</span><span class="no">BTN_Z</span><span class="o">=</span><span class="n">rb</span><span class="p">,</span><span class="no">BTN_SELECT</span><span class="o">=</span><span class="n">tl</span><span class="p">,</span><span class="no">BTN_START</span><span class="o">=</span><span class="n">tr</span><span class="p">,</span><span class="no">BTN_TL2</span><span class="o">=</span><span class="n">back</span><span class="p">,</span><span class="no">BTN_TR2</span><span class="o">=</span><span class="n">start</span><span class="p">,</span><span class="no">BTN_MODE</span><span class="o">=</span><span class="n">guide</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">calibration</span> <span class="n">x1</span><span class="o">=-</span><span class="mi">31320</span><span class="p">:</span><span class="mi">0</span><span class="p">:</span><span class="mi">20650</span><span class="p">,</span><span class="n">y1</span><span class="o">=-</span><span class="mi">21743</span><span class="p">:</span><span class="mi">0</span><span class="p">:</span><span class="mi">30460</span><span class="p">,</span><span class="n">x2</span><span class="o">=-</span><span class="mi">28945</span><span class="p">:</span><span class="mi">0</span><span class="p">:</span><span class="mi">21951</span><span class="p">,</span><span class="n">y2</span><span class="o">=-</span><span class="mi">23636</span><span class="p">:</span><span class="mi">0</span><span class="p">:</span><span class="mi">30969</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">axismap</span> <span class="o">-</span><span class="n">y1</span><span class="o">=</span><span class="n">y1</span><span class="p">,</span><span class="o">-</span><span class="n">y2</span><span class="o">=</span><span class="n">y2</span> <span class="p">\</span>
+<span class="o">--</span><span class="n">deadzone</span> <span class="mi">4000</span> <span class="o">--</span><span class="n">device</span><span class="o">-</span><span class="nb">name</span> <span class="s2">"Nintendo Switch Pro Controller"</span></code></pre></figure>
+
+<p>This maps the buttons for their <strong>physical position</strong> rather than their labels. Games will show Xbox button labels, wich are mirrored from Nintendo’s: A=B, B=A, X=Y, Y=X.</p>
+
+<hr />
+
+<h1 id="some-notes">Some notes</h1>
+
+<p>As of now, I’ve tested the <strong>Nintendo Switch Pro Controller</strong> on Linux:</p>
+
+<ul>
+  <li>
+    <p><strong>Wired:</strong> Controller is listed as HID, but <strong>no input is registered</strong>. The same happens on Windows.</p>
+  </li>
+  <li>
+    <p><strong>Bluetooth:</strong> It connects and works, but analog calibration is off. <strong>Both sticks’ up and right don’t register their full range</strong> (you’d have Mario moving at normal speed backwards but slowly forwards in Super Mario 64, for example). The same happens on Android.</p>
+  </li>
+</ul>
+
+<p>And calibration on jstest-gtk just messes everything up: the axis overflows as you move it and goes all around. Won’t do.</p>
+
+<hr />
+
+<p>If you know of any driver for this controller on Linux please share with us on the comments below, as this tutorial is only a workaround.</p>
+
+<p>Last edited: 03/09/2018 - some clean-up and improvements to text.</p>
+:ET
