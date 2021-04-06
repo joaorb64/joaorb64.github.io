@@ -6,15 +6,15 @@ about: Brazilian, Master in Computer Science, Linux and Super Smash Bros. fan.
 
 urls: [
   {
-    site: github,
-    link: https://github.com/joaorb64
+    site: "github",
+    link: "https://github.com/joaorb64"
   },
   {
-    site: twitter,
-    link: https://twitter.com/joao_shino
+    site: "twitter",
+    link: "https://twitter.com/joao_shino"
   },
   {
-    site: linkedin,
-    link: https://www.linkedin.com/in/joaorb64/
+    site: "linkedin",
+    link: "https://www.linkedin.com/in/joaorb64/"
   }
 ]
