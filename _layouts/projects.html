@@ -8,10 +8,16 @@ layout: default
 		<div class="container">
 			<div class="row text-center text-lg-left">
 				{% for i in site.projects %}
-					<div class="col-lg-4 col-md-6 col-xs-6 text-center" style="padding-left: 2px; padding-right: 2px;">
+					<a
+						class="col-lg-4 col-md-6 col-xs-6 text-center"
+						style="padding: 8px;"
+						href="{{ site.baseurl }}{{ i.url }}"
+					>
 						<img class="img-fluid" src="/projects/img/{{ i.name }}.png" style="width: 100%;" />
-						<h2 style="border: 0; background-color: #C2C2C2; padding: 5px 0;">{{ i.name }}</h2>
-					</div>
+						<h2 style="border: 0; background-color: #222; color: white; padding: 10px; margin: 0">
+							{{ i.name }}
+						</h2>
+					</a>
 				{% endfor %}
 			</div>
 		</div>
