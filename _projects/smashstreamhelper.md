@@ -1,3 +1,4 @@
 ---
 name: "SmashStreamHelper"
+layout: project
 ---

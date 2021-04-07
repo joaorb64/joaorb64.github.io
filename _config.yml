@@ -4,8 +4,11 @@ markdown: kramdown
 highlighter: pygments
 about: Brazilian, Master in Computer Science. Linux and Super Smash Bros. fan.
 
-collections:
-  - projects
+collections: {
+  projects: {
+    output: true
+  }
+}
 
 urls: [
   {

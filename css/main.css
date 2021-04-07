@@ -3,7 +3,14 @@
  * Master styling
  * //////////////
  */
+
+@font-face {
+  font-family: roboto;
+  src: url(Roboto-Regular.ttf);
+}
+
 body {
+  font-family: roboto;
 	color: #424242;
 	background-color: #e8e8e8;
 }
