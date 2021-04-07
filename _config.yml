@@ -2,7 +2,10 @@ name: joaorb64
 description: João Ribeiro Bezerra
 markdown: kramdown
 highlighter: pygments
-about: Brazilian, Master in Computer Science, Linux and Super Smash Bros. fan.
+about: Brazilian, Master in Computer Science. Linux and Super Smash Bros. fan.
+
+collections:
+  - projects
 
 urls: [
   {
