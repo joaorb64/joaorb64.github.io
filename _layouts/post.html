@@ -5,8 +5,20 @@ layout: default
 <span class="time">{{ page.date | date_to_string }}</span>
 
 <div class="content">
+	{% assign image_path = page.slug | prepend: '/img/post_images/' | append: "/main.png" %}
+	{% assign file_exists = site.static_files | where: "path", image_path  %}
+
+	{% if file_exists.size != 0 %}
+		<div class="col-12" style="display: flex; place-content: center; margin-top: 0px; margin-bottom: 64px;">
+			<img
+				style="max-height: 200px; width: auto;"
+				src="{{image_path}}"
+			/>
+		</div>
+	{% endif %}
+
 	<div class="post">{{ content }}</div>
-	
+
 	{% if page.comments %}
 		{% include disqus.html %}
 	{% endif %}

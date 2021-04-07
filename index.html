@@ -4,15 +4,39 @@ layout: default
 
 <div id="home">
   <h1>Blog Posts</h1>
-  <ul class="posts">
+  <div class="posts">
     {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        {% if post.comments %}
-          <span class="glyphicon glyphicon-comment"></span>
-          <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-url="{{ site.baseurl }}{{ post.url }}">0</a>
+      <div style="display: flex; width: 100%; margin-bottom: 64px;">
+        {% assign image_path = post.slug | prepend: '/img/post_images/' | append: "/main.png" %}
+        {% assign file_exists = site.static_files | where: "path", image_path  %}
+
+        {% if file_exists.size == 0 %}
+          {% assign image_path = "/img/post_images/generic.png" %}
         {% endif %}
-      </li>
+
+        <div style="width: 200px; height: 100px; overflow: hidden; display: flex;
+        place-content: center; flex-shrink: 0;">
+          <img src="{{image_path}}" />
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding: 0px 16px; width: 100%;">
+          <a style="text-decoration: none; color: rgba(0, 0, 0, 0.75);" href="{{ site.baseurl }}{{ post.url }}">
+            <div style="font-size: 20px; font-weight: bold;">{{ post.title }}</div>
+          </a>
+          <div style="display: flex;">
+            <div>{{ post.date | date_to_string }}</div>
+            <div style="margin-left: 16px;">
+              {% if post.comments %}
+                <span class="glyphicon glyphicon-comment"></span>
+                <a style="place-self: flex-end;" href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-url="{{ site.baseurl }}{{ post.url }}">0</a>
+              {% endif %}
+            </div>
+          </div>
+          <div style="text-align: justify; margin-top: 12px; margin-bottom: 12px;">
+            {{ post.excerpt | strip_html | truncatewords:75 }} […]
+          </div>
+        </div>
+      </div>
     {% endfor %}
-  </ul>
+    </div>
 </div>
