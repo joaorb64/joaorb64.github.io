@@ -101,10 +101,11 @@ body {
  * Font and link declarations
  * //////////////////////////
  */
-span.time {
-    color: #ADADAD;
-    margin-bottom: 5px;
-    font-size: 11px;
+.time {
+  color: #ADADAD;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 h1 {
@@ -133,6 +134,15 @@ p {
   line-height: 1.6;
   margin-bottom: 1.2rem;
   text-align: justify;
+}
+
+.layout-content p img {
+  max-width: 100%;
+}
+
+.layout-content .image-subtitle {
+  text-align: center;
+  color: #666666;
 }
 
 /**

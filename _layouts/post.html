@@ -1,8 +1,14 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<span class="time">{{ page.date | date_to_string }}</span>
+<h1>
+	<span style="opacity: .4; color: black">
+		<a style="text-decoration: none; color: black" href="{{ site.baseurl }}/">
+			Blog
+		</a>
+		>
+	</span> {{ page.title }}</h1>
+<div class="time">{{ page.date | date_to_string }}</div>
 
 <div class="content">
 	{% assign image_path = page.slug | prepend: '/img/post_images/' | append: "/main.png" %}
@@ -16,6 +22,8 @@ layout: default
 			/>
 		</div>
 	{% endif %}
+
+	{% assign image_path = image_path %}
 
 	<div class="post">{{ content }}</div>
 
