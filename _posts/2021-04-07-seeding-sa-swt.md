@@ -84,7 +84,7 @@ If you play a match between Brasília and Quito, this should be the expected int
 ![PING SA]({{image_path}}/ping-sa.png)
 ![PING EU]({{image_path}}/ping-eu.png)
 
-PING between different regions in South America, then Europe. Notice how PING from one extreme to other in Europe is still lower than most routes in South America. Source: [WonderNetwork](https://wondernetwork.com/pings).
+PING between different regions in South America, then Europe. Notice how PING from one extreme to another in Europe is still lower than most routes in South America. Source: [WonderNetwork](https://wondernetwork.com/pings).
 {: .image-subtitle }
 
 ## Seeding strategy
@@ -114,19 +114,19 @@ My algorithm went through the original seeding with 3 different cursors (one for
 
 One particular case that made me very anxious about this reordering was Br1 AV: originally seeded 11, he was reordered to 19. If you look at the general seeding without considering this unconventional seeding strategy, it would seem like this player was seeded too low. In the end, his bracket projection worked as expected and he was one of the two players in Grand Finals.
 
-Other possible problem is that, even if we avoid internet latency earlier in bracket, won't it eventually happen later? And the answer is yes, it will. We had some issues (specially in the losers bracket where players are placed in the order they lose matches).
+Another possible problem is that, even if we avoid internet latency earlier in bracket, won't it eventually happen later? And the answer is yes, it will. We had some issues (especially in the losers bracket where players are placed in the order they lose matches).
 
-In the end, my argument is: even if top 16 has matches with a terrible experience for the players, at least they already classified to the in-person regional finals where they will be playing offline. Additionally, their bracket up to top 16 should have avoided internet latency, so the matches had the lower influence from internet latency and input buffering that they could have.
+In the end, my argument is: even if top 16 has matches with a terrible experience for the players, at least they already classified to the in-person regional finals where they will be playing offline. Additionally, their bracket up to top 16 should have avoided internet latency, so the matches had the lowest influence from internet latency and input buffering that they could have.
 
 ## Conclusion
 
 ![Results]({{image_path}}/results.png)
-Classified Players that will play the in-person regional finals later on
+Classified Players that will play the in-person regional finals later on. Source: [SmashWorldTour@Twitter](https://twitter.com/SmashWorldTour)
 {: .image-subtitle }
 
 With all challenges we had to deal with, I think the overall result of our efforts contributed to a better experience for all players. I asked for and received good feedback from players in all levels of skill. The classified players are mostly the ones we expected, and there's representation from multiple countries.
 
-I cannot thank the community enough for believing in me, and in understanding my unortodox seeding strategy. I'm also very thankful of how the community handled some latency-related issues that occurred in the tournament.
+I cannot thank the community enough for believing in me, and in understanding my unorthodox seeding strategy. I'm also very thankful of how the community handled some latency-related issues that occurred in the tournament.
 
 In a way I also developed a study that helps the community in understanding better South America's network-related issues and needs.
 
