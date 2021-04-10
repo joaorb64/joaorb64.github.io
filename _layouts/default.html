@@ -22,42 +22,50 @@
 
 <body class="layout-body">
 
-  <div class="layout-container">
+  <div class="layout-topbar">
+    <h1>
+      <span style="font-size:30px;cursor:pointer;padding:16px" onclick="openNav()">&#9776; </span>
+      joaorb64
+    </h1>
+  </div>
 
-    <div class="layout-leftbar">
-      <h1>{{ site.name }}</h1>
-      <p>{{ site.description }}</p>
+  <div class="layout-leftbar" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <h1>{{ site.name }}</h1>
+    <p>{{ site.description }}</p>
 
-      <div style="text-align:center">
-        <img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
+    <div style="text-align:center">
+      <img id="about" src="{{ site.baseurl }}/img/logo.jpg" height="120px" width="120px" /><br />
 
-        {{ site.about }}
-      </div>
-
-      {% assign current = page.url | downcase | split: '/' %}
-
-      <ul style="padding:0px;margin-top: 20px; margin-bottom: 20px;">
-        <a href="{{ site.baseurl }}/" {% if current[1] == null %}class='active'{% endif %}><li>Blog</li></a>
-        <a href="{{ site.baseurl }}/projects/" {% if current[1] == 'projects' %}class='active'{% endif %}><li>Projects</li></a>
-      </ul>
-
-      <div style="display: flex; place-content: center;">
-        {% for i in site.urls %}
-          <a href="{{i.link}}" target="_blank" class="social-outer">
-            <div class="social-inner" style="width: 22px; height: 22px; background-size: contain;
-            background-repeat: no-repeat; background-position: center;
-            background-image: url({{ site.baseurl }}/img/{{i.site}}.png);">
-            </div>
-          </a>
-        {% endfor %}
-      </div>
-
-      <div style="display: flex; place-content: center;">
-        joaorb64@gmail.com
-      </div>
-
+      {{ site.about }}
     </div>
 
+    {% assign current = page.url | downcase | split: '/' %}
+
+    <ul style="padding:0px;margin-top: 20px; margin-bottom: 20px;">
+      <a href="{{ site.baseurl }}/" {% if current[1] == null %}class='active'{% endif %}><li>Blog</li></a>
+      <a href="{{ site.baseurl }}/projects/" {% if current[1] == 'projects' %}class='active'{% endif %}><li>Projects</li></a>
+    </ul>
+
+    <div style="display: flex; place-content: center;">
+      {% for i in site.urls %}
+        <a href="{{i.link}}" target="_blank" class="social-outer">
+          <div class="social-inner" style="width: 22px; height: 22px; background-size: contain;
+          background-repeat: no-repeat; background-position: center;
+          background-image: url({{ site.baseurl }}/img/{{i.site}}.png);">
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+
+    <div style="display: flex; place-content: center;">
+      joaorb64@gmail.com
+    </div>
+
+  </div>
+
+  <div class="layout-container">
     <div class="layout-content">
 
       {{ content }}
@@ -68,6 +76,16 @@
     </div>
 
   </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.left = "0";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.left = "-150%";
+    }
+  </script>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->

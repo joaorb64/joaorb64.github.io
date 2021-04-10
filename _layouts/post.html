@@ -15,11 +15,11 @@ layout: default
 	{% assign file_exists = site.static_files | where: "path", image_path  %}
 
 	{% if file_exists.size != 0 %}
-		<div class="col-12" style="display: flex; place-content: center; margin-top: 0px; margin-bottom: 64px;">
-			<img
-				style="max-height: 200px; width: auto;"
-				src="{{image_path}}"
-			/>
+		<div
+			class="col-12"
+			style="display: flex; place-content: center; margin-top: 0px; margin-bottom: 64px;
+			background-image: url({{image_path}}); height: 200px; background-repeat: no-repeat;
+			background-position: center; background-size: contain;">
 		</div>
 	{% endif %}
 
