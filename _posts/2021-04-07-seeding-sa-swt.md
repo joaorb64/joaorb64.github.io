@@ -120,7 +120,13 @@ In the end, my argument is: even if top 16 has matches with a terrible experienc
 
 ## Conclusion
 
-With all challenges we had to deal with, I think the overall result of our efforts contributed to a better experience for all players. I cannot thank the community enough for believing in me, and in understanding my unortodox seeding strategy. I'm also very thankful of how the community handled some latency-related issues that occurred in the tournament.
+![Results]({{image_path}}/results.png)
+Classified Players that will play the in-person regional finals later on
+{: .image-subtitle }
+
+With all challenges we had to deal with, I think the overall result of our efforts contributed to a better experience for all players. I asked for and received good feedback from players in all levels of skill. The classified players are mostly the ones we expected, and there's representation from multiple countries.
+
+I cannot thank the community enough for believing in me, and in understanding my unortodox seeding strategy. I'm also very thankful of how the community handled some latency-related issues that occurred in the tournament.
 
 In a way I also developed a study that helps the community in understanding better South America's network-related issues and needs.
 
