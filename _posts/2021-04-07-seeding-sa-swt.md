@@ -48,7 +48,7 @@ A similar concept is applied in the FIFA World Cup, where a known strong team is
 
 ### Fighting game networking
 
-Fighting games such as Super Smash Bros. Ultimate are extremely sensible to internet delay. Fighting games are deterministic, which means that with the same configurations and the same inputs, the results are always the same. Because of this, it's easy to implement Replay features by just saving the inputs in a match in order and then playing a new match with the same configuration to have the exact same result. The same could be said about networked matches: if you send and receive the players' inputs in order, the match in both ends happens in the exact same way.
+Fighting games such as Super Smash Bros. Ultimate are extremely sensitive to internet delay. Fighting games are deterministic, which means that with the same configurations and the same inputs, the results are always the same. Because of this, it's easy to implement Replay features by just saving the inputs in a match in order and then playing a new match with the same configuration to have the exact same result. The same could be said about networked matches: if you send and receive the players' inputs in order, the match in both ends happens in the exact same way.
 
 However, in the case of a networked match, the game can only run a frame if there's input from both players available. The most common strategy used is creating a buffer system, where you pack input for a few frames for sending/receiving inputs for the game to run smoothly. If the communication delay between two players is small, it can work well. The problems come when the delay is too high. In this case, the two main problems that arise are:
 
