@@ -4,6 +4,8 @@ markdown: kramdown
 highlighter: pygments
 about: Brazilian, Master in Computer Science. Linux and Super Smash Bros. fan.
 
+baseurl: https://joaorb64.github.io
+
 collections: {
   projects: {
     output: true
