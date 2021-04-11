@@ -6,3 +6,23 @@ layout: default
 <div class="content">
 	<div class="post">{{ content }}</div>
 </div>
+
+<div style="display: flex; place-content: center;">
+	{% if page.link %}
+		{% if page.link contains "github" %}
+			{% assign logo = "github" %}
+		{% else %}
+			{% assign logo = "website" %}
+		{% endif %}
+		<a style="background-color: #222; width: auto; border-radius: 999px;
+		padding: 20px; color: white; font-weight: bold;" href="{{page.link}}" target="_blank" class="social-outer">
+			<div class="social-inner" style="width: 22px; height: 22px; background-size: contain;
+				background-repeat: no-repeat; background-position: center;
+				background-image: url({{ site.baseurl }}/img/{{ logo }}.png);">
+			</div>
+			<div class="social-inner" style="margin-left: 10px;">
+				Link to the project
+			</div>
+		</a>
+	{% endif %}
+</div>
