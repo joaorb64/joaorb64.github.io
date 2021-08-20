@@ -1,0 +1,1129 @@
+{
+    "bogota": [
+        {
+            "avg": 115.0,
+            "ip": "speedtestbog1.tigo.com.co",
+            "isp": "TigoUne",
+            "max": 115.0,
+            "min": 115.0
+        },
+        {
+            "avg": 146.0,
+            "ip": "200.26.135.54",
+            "isp": "Claro",
+            "max": 147.0,
+            "min": 146.0
+        },
+        {
+            "avg": 174.0,
+            "ip": "speedtest.directv.com.co",
+            "isp": "DIRECTV Colombia",
+            "max": 174.0,
+            "min": 174.0
+        },
+        {
+            "avg": 71.0,
+            "ip": "speedtest.globalcrossing.com.co",
+            "isp": "Level 3",
+            "max": 72.0,
+            "min": 71.0
+        },
+        {
+            "avg": 153.0,
+            "ip": "etb-medidor.etb.net.co",
+            "isp": "ETB",
+            "max": 154.0,
+            "min": 153.0
+        }
+    ],
+    "brasilia": [
+        {
+            "avg": 185.0,
+            "ip": "spd6.claro.com.br",
+            "isp": "Claro",
+            "max": 187.0,
+            "min": 185.0
+        },
+        {
+            "avg": 105.0,
+            "ip": "spetstbsa01.timbrasil.com.br",
+            "isp": "TIM Brasil",
+            "max": 107.0,
+            "min": 105.0
+        },
+        {
+            "avg": 146.0,
+            "ip": "speedtest.logtel.net.br",
+            "isp": "LOGTEL TELECOM",
+            "max": 146.0,
+            "min": 146.0
+        },
+        {
+            "avg": 141.0,
+            "ip": "speedtest.nwi.com.br",
+            "isp": "NWI Internet Telecom",
+            "max": 143.0,
+            "min": 141.0
+        },
+        {
+            "avg": 183.0,
+            "ip": "speedtest1.camoatelecom.com.br",
+            "isp": "Camoa",
+            "max": 185.0,
+            "min": 182.0
+        },
+        {
+            "avg": 110.0,
+            "ip": "speedtest1.ps5.com.br",
+            "isp": "PS5 Internet",
+            "max": 111.0,
+            "min": 110.0
+        },
+        {
+            "avg": 136.0,
+            "ip": "speedtest1.telebras.net.br",
+            "isp": "Telecomunicacoes Brasileiras S.A. - TELEBRAS",
+            "max": 141.0,
+            "min": 134.0
+        },
+        {
+            "avg": 151.0,
+            "ip": "speedtest.wikinet.com.br",
+            "isp": "WIKINET TELECOMUNICACOES LTDA SA",
+            "max": 155.0,
+            "min": 151.0
+        },
+        {
+            "avg": 147.0,
+            "ip": "speedtest1.obti.com.br",
+            "isp": "OBTI",
+            "max": 148.0,
+            "min": 146.0
+        }
+    ],
+    "buenos aires": [
+        {
+            "avg": 259.0,
+            "ip": "speedtest.directvnet.com.ar",
+            "isp": "DIRECTV INTERNET",
+            "max": 260.0,
+            "min": 259.0
+        },
+        {
+            "avg": 125.0,
+            "ip": "speedtest.claro.com.ar",
+            "isp": "Claro",
+            "max": 128.0,
+            "min": 125.0
+        },
+        {
+            "avg": 55.0,
+            "ip": "arbuespeedtest01.level3.net",
+            "isp": "CenturyLink",
+            "max": 56.0,
+            "min": 55.0
+        },
+        {
+            "avg": 102.0,
+            "ip": "st.bsas.link.sa.com",
+            "isp": "Multi LINK Telecom",
+            "max": 103.0,
+            "min": 102.0
+        },
+        {
+            "avg": 197.0,
+            "ip": "speed.fibertel.com.ar",
+            "isp": "Fibertel",
+            "max": 197.0,
+            "min": 197.0
+        },
+        {
+            "avg": 131.0,
+            "ip": "st1.telecom.com.ar",
+            "isp": "Telecom Argentina",
+            "max": 132.0,
+            "min": 131.0
+        },
+        {
+            "avg": 129.0,
+            "ip": "velocidad.telecentro.net.ar",
+            "isp": "Telecentro",
+            "max": 129.0,
+            "min": 129.0
+        },
+        {
+            "avg": 197.0,
+            "ip": "www.telered.com.ar",
+            "isp": "Tele Red",
+            "max": 200.0,
+            "min": 196.0
+        },
+        {
+            "avg": 61.0,
+            "ip": "speedtest1.gics.telefonica.com.ar",
+            "isp": "Telefonica De Argentina SA (EMPRESAS)",
+            "max": 62.0,
+            "min": 61.0
+        },
+        {
+            "avg": 59.0,
+            "ip": "speedtest.gigared.com.ar",
+            "isp": "Gigared S.A.",
+            "max": 59.0,
+            "min": 59.0
+        },
+        {
+            "avg": 212.0,
+            "ip": "speedtest1.convergia.com.ar",
+            "isp": "Convergia Argentina",
+            "max": 213.0,
+            "min": 212.0
+        },
+        {
+            "avg": 63.0,
+            "ip": "speedtestbue.cabase.org.ar",
+            "isp": "NAP CABASE",
+            "max": 64.0,
+            "min": 63.0
+        }
+    ],
+    "caracas": [
+        {
+            "avg": 181.0,
+            "ip": "speed.ifxnw.com.ve",
+            "isp": "IFX Networks Venezuela",
+            "max": 205.0,
+            "min": 152.0
+        },
+        {
+            "avg": 95.0,
+            "ip": "speedtest.totalcom.net",
+            "isp": "Totalcom Venezuela",
+            "max": 96.0,
+            "min": 95.0
+        },
+        {
+            "avg": 151.0,
+            "ip": "speedtest01.digitel.net.ve",
+            "isp": "Corporacion Digitel C.A.",
+            "max": 152.0,
+            "min": 151.0
+        },
+        {
+            "avg": 112.0,
+            "ip": "speed-ookla.net-uno.net",
+            "isp": "Netuno, C.A.",
+            "max": 112.0,
+            "min": 112.0
+        }
+    ],
+    "ciudad del este": [
+        {
+            "avg": 188.0,
+            "ip": "speedtest.vive.com.py",
+            "isp": "Vive Telecom S.A.",
+            "max": 189.0,
+            "min": 188.0
+        },
+        {
+            "avg": 103.0,
+            "ip": "speedtest.link.sa.com",
+            "isp": "Multi LINK Telecom",
+            "max": 105.0,
+            "min": 102.0
+        },
+        {
+            "avg": 185.0,
+            "ip": "test1.giganet.net.py",
+            "isp": "GigaNET",
+            "max": 186.0,
+            "min": 185.0
+        },
+        {
+            "avg": 141.0,
+            "ip": "speedtest.neo.com.py",
+            "isp": "NEO TELECOM",
+            "max": 142.0,
+            "min": 141.0
+        }
+    ],
+    "fortaleza": [
+        {
+            "avg": 178.0,
+            "ip": "speedtest.tely.com.br",
+            "isp": "Tely",
+            "max": 180.0,
+            "min": 178.0
+        },
+        {
+            "avg": 134.0,
+            "ip": "131.161.224.13",
+            "isp": "Neonet ISP",
+            "max": 136.0,
+            "min": 134.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "minhaconexao.redenet-ce.com.br",
+            "isp": "RedeNet Telecom",
+            "max": 135.0,
+            "min": 131.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "speedtest.infocotelecom.com.br",
+            "isp": "Infoco Telecom",
+            "max": 133.0,
+            "min": 132.0
+        },
+        {
+            "avg": 135.0,
+            "ip": "187.86.200.30",
+            "isp": "Navega Mais ISP",
+            "max": 136.0,
+            "min": 135.0
+        },
+        {
+            "avg": 131.0,
+            "ip": "velocidade.forteconnect.com.br",
+            "isp": "Forte Connect",
+            "max": 131.0,
+            "min": 131.0
+        },
+        {
+            "avg": 135.0,
+            "ip": "186.225.62.102",
+            "isp": "Wirelink Telecom",
+            "max": 139.0,
+            "min": 134.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "speedtest.tuninstelecom.com.br",
+            "isp": "TUNINS TELECOM",
+            "max": 132.0,
+            "min": 132.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "speedtest.mobtelecom.com.br",
+            "isp": "Mob Telecom",
+            "max": 137.0,
+            "min": 130.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speedtest3.connectja.com.br",
+            "isp": "Connect",
+            "max": 131.0,
+            "min": 130.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speed.jumpernet.com.br",
+            "isp": "JUMPER NET",
+            "max": 131.0,
+            "min": 130.0
+        },
+        {
+            "avg": 128.0,
+            "ip": "speedtest.ceanettelecom.com.br",
+            "isp": "C&A NET TELECOM",
+            "max": 129.0,
+            "min": 128.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speedtest.multiplaytelecom.com.br",
+            "isp": "Multiplay Telecom",
+            "max": 130.0,
+            "min": 130.0
+        },
+        {
+            "avg": 128.0,
+            "ip": "speed1.powerlinktelecom.com.br",
+            "isp": "Power Link Telecom",
+            "max": 129.0,
+            "min": 128.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speedtest.glnet.com.br",
+            "isp": "GLNET ISP",
+            "max": 131.0,
+            "min": 130.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "viacast.com.br",
+            "isp": "Via Cast Solucoes em Telecomunicacoes",
+            "max": 141.0,
+            "min": 131.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "speedtest.acenetbj.com.br",
+            "isp": "ACENET",
+            "max": 133.0,
+            "min": 132.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "velocidade.giga7telecom.com.br",
+            "isp": "Giga 7 Telecom",
+            "max": 137.0,
+            "min": 133.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "sp1.turbonetce.com.br",
+            "isp": "TURBONET",
+            "max": 132.0,
+            "min": 130.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speedtest.conectatelecom.com.br",
+            "isp": "Conecta Telecom",
+            "max": 130.0,
+            "min": 130.0
+        },
+        {
+            "avg": 231.0,
+            "ip": "fla-st01.provenet.com.br",
+            "isp": "ProveNET",
+            "max": 255.0,
+            "min": 204.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "speedtest.netonda.com.br",
+            "isp": "Netonda",
+            "max": 134.0,
+            "min": 132.0
+        },
+        {
+            "avg": 91.0,
+            "ip": "www.allnettelecom.com.br",
+            "isp": "ALLNET TELECOM",
+            "max": 96.0,
+            "min": 90.0
+        },
+        {
+            "avg": 118.0,
+            "ip": "speedtest.aquitelecom.com",
+            "isp": "Aqui Telecom",
+            "max": 119.0,
+            "min": 118.0
+        },
+        {
+            "avg": 131.0,
+            "ip": "spd1.claro.com.br",
+            "isp": "Claro",
+            "max": 131.0,
+            "min": 131.0
+        },
+        {
+            "avg": 129.0,
+            "ip": "177.104.115.11",
+            "isp": "TNET Solucoes e Internet Banda Larga",
+            "max": 131.0,
+            "min": 128.0
+        },
+        {
+            "avg": 131.0,
+            "ip": "speedtest.linkceara.com.br",
+            "isp": "LinkCe",
+            "max": 131.0,
+            "min": 131.0
+        },
+        {
+            "avg": 165.0,
+            "ip": "177.104.123.14",
+            "isp": "CNW - Ceara Networks",
+            "max": 191.0,
+            "min": 147.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "sp1.f1netce.net.br",
+            "isp": "F1NET COMERCIO E SERVIÇOS LTDA",
+            "max": 133.0,
+            "min": 131.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "speedtest.texnet.net.br",
+            "isp": "Texnet Telecom",
+            "max": 136.0,
+            "min": 131.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "speedtest.rnettelecom.net.br",
+            "isp": "Rnet Telecom",
+            "max": 136.0,
+            "min": 128.0
+        }
+    ],
+    "la paz": [
+        {
+            "avg": 180.0,
+            "ip": "speedtestlp.tigo.bo",
+            "isp": "Telecel SA (TIGO)",
+            "max": 181.0,
+            "min": 180.0
+        },
+        {
+            "avg": 61.0,
+            "ip": "test.entelnet.bo",
+            "isp": "ENTEL S.A.",
+            "max": 63.0,
+            "min": 60.0
+        },
+        {
+            "avg": 60.0,
+            "ip": "speedtest.axsbolivia.com",
+            "isp": "AXS BOLIVIA S.A.",
+            "max": 61.0,
+            "min": 60.0
+        },
+        {
+            "avg": 155.0,
+            "ip": "speedtest.lpaz.megared.net.mx",
+            "isp": "Megacable",
+            "max": 155.0,
+            "min": 155.0
+        }
+    ],
+    "lima": [
+        {
+            "avg": 2.0,
+            "ip": "ookla-was.telefonica.net.pe",
+            "isp": "Telefonica del Perú - Lima1",
+            "max": 3.0,
+            "min": 2.0
+        },
+        {
+            "avg": 3.0,
+            "ip": "medidor1.optical.com.pe",
+            "isp": "Optical Networks SAC",
+            "max": 6.0,
+            "min": 2.0
+        },
+        {
+            "avg": 3.0,
+            "ip": "sp1.netline.pe",
+            "isp": "Netline Perú S.A.",
+            "max": 3.0,
+            "min": 3.0
+        },
+        {
+            "avg": 2.0,
+            "ip": "medidor.win.pe",
+            "isp": "WIN",
+            "max": 3.0,
+            "min": 2.0
+        },
+        {
+            "avg": 3.0,
+            "ip": "speedtest.entel.net.pe",
+            "isp": "Entel Peru",
+            "max": 6.0,
+            "min": 3.0
+        },
+        {
+            "avg": 3.0,
+            "ip": "sp1.colinanet.com",
+            "isp": "ColinaNet SRL.",
+            "max": 7.0,
+            "min": 2.0
+        },
+        {
+            "avg": 57.0,
+            "ip": "medidor.fiberluxperu.com",
+            "isp": "Fiberluxperu",
+            "max": 61.0,
+            "min": 56.0
+        },
+        {
+            "avg": 3.0,
+            "ip": "speedtest.convergia.com.pe",
+            "isp": "Convergia Networks Inc",
+            "max": 4.0,
+            "min": 3.0
+        },
+        {
+            "avg": 3.0,
+            "ip": "speedtest.bitel.com.pe",
+            "isp": "VIETTEL PERU S.A.C",
+            "max": 7.0,
+            "min": 2.0
+        }
+    ],
+    "manaus": [
+        {
+            "avg": 236.0,
+            "ip": "velocimetro1.fibernetwork.com.br",
+            "isp": "Fiber Network",
+            "max": 240.0,
+            "min": 236.0
+        },
+        {
+            "avg": 242.0,
+            "ip": "speedtest.speednetworks.com.br",
+            "isp": "SpeedNetworks",
+            "max": 249.0,
+            "min": 240.0
+        },
+        {
+            "avg": 197.0,
+            "ip": "velocimetro.intlink.com.br",
+            "isp": "Intlink",
+            "max": 197.0,
+            "min": 197.0
+        },
+        {
+            "avg": 173.0,
+            "ip": "spetstmns01.timbrasil.com.br",
+            "isp": "TIM Brasil",
+            "max": 173.0,
+            "min": 173.0
+        },
+        {
+            "avg": 226.0,
+            "ip": "sp1.logicpro.com.br",
+            "isp": "Logic Pro Tecnologia",
+            "max": 226.0,
+            "min": 226.0
+        },
+        {
+            "avg": 205.0,
+            "ip": "diotelecom.dynamic-dns.net",
+            "isp": "Dio Telecom",
+            "max": 206.0,
+            "min": 205.0
+        },
+        {
+            "avg": 232.0,
+            "ip": "speedtest.proveinter.com.br",
+            "isp": "Proveinter Telecom",
+            "max": 236.0,
+            "min": 228.0
+        },
+        {
+            "avg": 238.0,
+            "ip": "velocimetro-mns.virtua.com.br",
+            "isp": "NET Virtua",
+            "max": 241.0,
+            "min": 237.0
+        },
+        {
+            "avg": 150.0,
+            "ip": "braxtel.com.br",
+            "isp": "Braxtel Telecom e Ti",
+            "max": 150.0,
+            "min": 150.0
+        },
+        {
+            "avg": 230.0,
+            "ip": "speedtest1.axes.com.br",
+            "isp": "axes",
+            "max": 230.0,
+            "min": 230.0
+        },
+        {
+            "avg": 234.0,
+            "ip": "ultraconnect.ddns.us",
+            "isp": "Ultra Connect",
+            "max": 239.0,
+            "min": 233.0
+        },
+        {
+            "avg": 199.0,
+            "ip": "spd7.claro.com.br",
+            "isp": "Claro",
+            "max": 200.0,
+            "min": 199.0
+        }
+    ],
+    "montevideo": [
+        {
+            "avg": 71.0,
+            "ip": "speedtest.movistar.com.uy",
+            "isp": "Telefonica Moviles del Uruguay S.A.",
+            "max": 72.0,
+            "min": 71.0
+        }
+    ],
+    "porto alegre": [
+        {
+            "avg": 89.0,
+            "ip": "speedtest1.rlnetpoa.com.br",
+            "isp": "RLNET",
+            "max": 91.0,
+            "min": 89.0
+        },
+        {
+            "avg": 274.0,
+            "ip": "speedtest.trbandalarga.com.br",
+            "isp": "TR Serviços de Telecomunicações LTDA ME",
+            "max": 277.0,
+            "min": 270.0
+        },
+        {
+            "avg": 154.0,
+            "ip": "speedtest1.melnetrs.com.br",
+            "isp": "Melnet",
+            "max": 161.0,
+            "min": 146.0
+        },
+        {
+            "avg": 222.0,
+            "ip": "spd12.claro.com.br",
+            "isp": "Claro",
+            "max": 223.0,
+            "min": 222.0
+        },
+        {
+            "avg": 158.0,
+            "ip": "speedtest.giga.com.br",
+            "isp": "Giga Internet",
+            "max": 159.0,
+            "min": 158.0
+        },
+        {
+            "avg": 226.0,
+            "ip": "speedtest.stech.net.br",
+            "isp": "Vogel Telecom",
+            "max": 228.0,
+            "min": 226.0
+        },
+        {
+            "avg": 172.0,
+            "ip": "speedtest.nexfibra.com.br",
+            "isp": "Nexfibra Telecom",
+            "max": 183.0,
+            "min": 162.0
+        }
+    ],
+    "quito": [
+        {
+            "avg": 42.0,
+            "ip": "sp1.iplanet.ec",
+            "isp": "Iplanet",
+            "max": 42.0,
+            "min": 42.0
+        },
+        {
+            "avg": 146.0,
+            "ip": "speedtest.puntonet.ec",
+            "isp": "Puntonet S.A.",
+            "max": 147.0,
+            "min": 146.0
+        },
+        {
+            "avg": 156.0,
+            "ip": "speedtest1.netlife.ec",
+            "isp": "Netlife",
+            "max": 159.0,
+            "min": 155.0
+        }
+    ],
+    "santiago": [
+        {
+            "avg": 38.0,
+            "ip": "speedtest.netglobalis.cl",
+            "isp": "Netglobalis S.A",
+            "max": 38.0,
+            "min": 38.0
+        },
+        {
+            "avg": 166.0,
+            "ip": "speedtest.bynarya.net",
+            "isp": "Bynarya SpA",
+            "max": 167.0,
+            "min": 166.0
+        },
+        {
+            "avg": 37.0,
+            "ip": "speedtest.myjchile.cl",
+            "isp": "MyJ Chile Spa.",
+            "max": 41.0,
+            "min": 36.0
+        },
+        {
+            "avg": 177.0,
+            "ip": "speedtest.haulmer.com",
+            "isp": "Haulmer",
+            "max": 178.0,
+            "min": 177.0
+        },
+        {
+            "avg": 165.0,
+            "ip": "speedtest.clarochile.cl",
+            "isp": "Claro Chile SA",
+            "max": 166.0,
+            "min": 165.0
+        },
+        {
+            "avg": 226.0,
+            "ip": "speedtest.convergia.cl",
+            "isp": "Convergia Telecom S.A.",
+            "max": 228.0,
+            "min": 226.0
+        },
+        {
+            "avg": 40.0,
+            "ip": "speedtest.netline.cl",
+            "isp": "Netline Telecomunicaciones S.A.",
+            "max": 41.0,
+            "min": 40.0
+        },
+        {
+            "avg": 100.0,
+            "ip": "speedtest.tlink.cl",
+            "isp": "TLINK SpA",
+            "max": 101.0,
+            "min": 100.0
+        },
+        {
+            "avg": 170.0,
+            "ip": "sptcl.ifxnetworks.com",
+            "isp": "IFX NETWORKS CHILE",
+            "max": 171.0,
+            "min": 170.0
+        },
+        {
+            "avg": 38.0,
+            "ip": "speedtest-netgauge.movistar.cl",
+            "isp": "Telefonica Chile",
+            "max": 38.0,
+            "min": 38.0
+        },
+        {
+            "avg": 47.0,
+            "ip": "speedtest.orbyta.com",
+            "isp": "Orbyta S.A.",
+            "max": 61.0,
+            "min": 39.0
+        },
+        {
+            "avg": 38.0,
+            "ip": "speedtest-h5-10g.movistarplay.cl",
+            "isp": "Movistar Chile",
+            "max": 39.0,
+            "min": 38.0
+        },
+        {
+            "avg": 36.0,
+            "ip": "sp1.wom.cl",
+            "isp": "WOM Chile",
+            "max": 36.0,
+            "min": 36.0
+        },
+        {
+            "avg": 38.0,
+            "ip": "nacional.grupogtd.com",
+            "isp": "Grupo GTD",
+            "max": 40.0,
+            "min": 38.0
+        },
+        {
+            "avg": 95.0,
+            "ip": "speedtest.miinternet.cl",
+            "isp": "Mi Internet SpA",
+            "max": 96.0,
+            "min": 94.0
+        },
+        {
+            "avg": 129.0,
+            "ip": "speedstgo.altice.com.do",
+            "isp": "Altice Dominicana",
+            "max": 140.0,
+            "min": 126.0
+        },
+        {
+            "avg": 214.0,
+            "ip": "speedtest.telery.com",
+            "isp": "Telery Networks S.R.L",
+            "max": 217.0,
+            "min": 210.0
+        },
+        {
+            "avg": 129.0,
+            "ip": "speedtest.awm.do",
+            "isp": "AWM Solutions",
+            "max": 129.0,
+            "min": 129.0
+        }
+    ],
+    "sao paulo": [
+        {
+            "avg": 91.0,
+            "ip": "speedtest.k2network.com.br",
+            "isp": "K2 NETWORK",
+            "max": 91.0,
+            "min": 91.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speedtest.dsnetfg.com.br",
+            "isp": "Eduardo Carvalho",
+            "max": 131.0,
+            "min": 130.0
+        },
+        {
+            "avg": 93.0,
+            "ip": "speedtest.asaptelecom.com.br",
+            "isp": "ASAP GLOBAL TELECOM",
+            "max": 94.0,
+            "min": 93.0
+        },
+        {
+            "avg": 82.0,
+            "ip": "brasaospeedtest01.level3.net",
+            "isp": "CenturyLink",
+            "max": 83.0,
+            "min": 82.0
+        },
+        {
+            "avg": 89.0,
+            "ip": "speed1.brotherslan.com.br",
+            "isp": "Via Fibra Telecom - PONTO NET & RL NET",
+            "max": 89.0,
+            "min": 89.0
+        },
+        {
+            "avg": 129.0,
+            "ip": "speedtest.sp.g8.net.br",
+            "isp": "G8",
+            "max": 129.0,
+            "min": 129.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speedtest.openx.com.br",
+            "isp": "Open X",
+            "max": 132.0,
+            "min": 130.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "bw1.jpproviders.com.br",
+            "isp": "JP PROVIDERS",
+            "max": 134.0,
+            "min": 133.0
+        },
+        {
+            "avg": 172.0,
+            "ip": "m02.prod.tesatelecom.com",
+            "isp": "TESA Telecom",
+            "max": 172.0,
+            "min": 172.0
+        },
+        {
+            "avg": 131.0,
+            "ip": "stmc.aliancanet.net.br",
+            "isp": "AliancaNet",
+            "max": 131.0,
+            "min": 131.0
+        },
+        {
+            "avg": 91.0,
+            "ip": "sao.speedtest.net",
+            "isp": "Speedtest.net",
+            "max": 92.0,
+            "min": 91.0
+        },
+        {
+            "avg": 135.0,
+            "ip": "speedtest.rctelecomnet.com.br",
+            "isp": "RCTELECOM",
+            "max": 150.0,
+            "min": 131.0
+        },
+        {
+            "avg": 130.0,
+            "ip": "speed.worldfast.net.br",
+            "isp": "World Fast Telecomunicações",
+            "max": 131.0,
+            "min": 130.0
+        },
+        {
+            "avg": 92.0,
+            "ip": "isp1.rb7telecom.com.br",
+            "isp": "RB7 Telecom",
+            "max": 95.0,
+            "min": 91.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "spmc.iranettelecom.com.br",
+            "isp": "Iranet Telecom",
+            "max": 133.0,
+            "min": 133.0
+        },
+        {
+            "avg": 133.0,
+            "ip": "ooklaspeedtest.fiberbandalarga.net.br",
+            "isp": "Fiber Banda Larga",
+            "max": 135.0,
+            "min": 133.0
+        },
+        {
+            "avg": 150.0,
+            "ip": "tjtelecom.com.br",
+            "isp": "TJ TELECOM",
+            "max": 151.0,
+            "min": 150.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "speedtest.telecomexpress.com.br",
+            "isp": "Telecom Express",
+            "max": 132.0,
+            "min": 132.0
+        },
+        {
+            "avg": 84.0,
+            "ip": "speedtest1.hopnet.com.br",
+            "isp": "Hopnet",
+            "max": 85.0,
+            "min": 84.0
+        },
+        {
+            "avg": 183.0,
+            "ip": "velocimetro-spo.virtua.com.br",
+            "isp": "NET Serviços",
+            "max": 183.0,
+            "min": 183.0
+        },
+        {
+            "avg": 172.0,
+            "ip": "sp.nobreinternet.com.br",
+            "isp": "Nobre Telecom",
+            "max": 173.0,
+            "min": 172.0
+        },
+        {
+            "avg": 91.0,
+            "ip": "speedtest.sao01.softlayer.com",
+            "isp": "softlayer",
+            "max": 91.0,
+            "min": 91.0
+        },
+        {
+            "avg": 172.0,
+            "ip": "speedtestsp.stech.net.br",
+            "isp": "Vogel Telecom",
+            "max": 173.0,
+            "min": 172.0
+        },
+        {
+            "avg": 144.0,
+            "ip": "ookla.spcom.net.br",
+            "isp": "Criare Net Telecom",
+            "max": 144.0,
+            "min": 144.0
+        },
+        {
+            "avg": 88.0,
+            "ip": "svstsne0101.timbrasil.com.br",
+            "isp": "TIM Brasil",
+            "max": 88.0,
+            "min": 88.0
+        },
+        {
+            "avg": 91.0,
+            "ip": "acessopoint.com.br",
+            "isp": "Acesso Point",
+            "max": 92.0,
+            "min": 91.0
+        },
+        {
+            "avg": 120.0,
+            "ip": "speedtest.sothis.com.br",
+            "isp": "Sothis Telecomunicações",
+            "max": 123.0,
+            "min": 120.0
+        },
+        {
+            "avg": 131.0,
+            "ip": "fujin.tdkom.psi.br",
+            "isp": "SCA Internet",
+            "max": 132.0,
+            "min": 130.0
+        },
+        {
+            "avg": 171.0,
+            "ip": "speedtest-ookla-prod-001-sao.ff.avast.com",
+            "isp": "CCleaner",
+            "max": 172.0,
+            "min": 171.0
+        },
+        {
+            "avg": 259.0,
+            "ip": "speedtest.76telecom.com.br",
+            "isp": "76 TELECOMUNICAÇÃO LTDA",
+            "max": 270.0,
+            "min": 253.0
+        },
+        {
+            "avg": 136.0,
+            "ip": "speedtest.gamersclub.com.br",
+            "isp": "GAMERS CLUB",
+            "max": 137.0,
+            "min": 136.0
+        },
+        {
+            "avg": 93.0,
+            "ip": "speedtest.pointwifitelecom.com.br",
+            "isp": "Point Wifi",
+            "max": 95.0,
+            "min": 92.0
+        },
+        {
+            "avg": 136.0,
+            "ip": "speedtest.agilityinternet.com.br",
+            "isp": "Agility Internet",
+            "max": 136.0,
+            "min": 136.0
+        },
+        {
+            "avg": 174.0,
+            "ip": "speedtest.hostfiber.com.br",
+            "isp": "HostFiber",
+            "max": 174.0,
+            "min": 174.0
+        },
+        {
+            "avg": 85.0,
+            "ip": "stmc.ipconectelecom.com.br",
+            "isp": "IP Conect Telecom",
+            "max": 85.0,
+            "min": 85.0
+        },
+        {
+            "avg": 172.0,
+            "ip": "spd5.claro.com.br",
+            "isp": "Claro SP1",
+            "max": 172.0,
+            "min": 172.0
+        },
+        {
+            "avg": 132.0,
+            "ip": "speedtest.rmnetwork.net.br",
+            "isp": "RMNETWORK",
+            "max": 134.0,
+            "min": 132.0
+        },
+        {
+            "avg": 93.0,
+            "ip": "speedtest.pristonnet.com",
+            "isp": "PristonNet",
+            "max": 94.0,
+            "min": 93.0
+        }
+    ]
+}
