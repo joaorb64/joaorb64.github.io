@@ -11,11 +11,11 @@ categories:
 
 ## On South America's internet routing
 
-In this brief post, I will go over data I have gathered on South America's routing. The idea was to test connections between different countries in SA to try to find some kind of pattern. I have created a test using the database from here: https://williamyaps.github.io/wlmjavascript/servercli.html. I have created a script that tries PINGing all servers from a few cities in SA and record the results. I have sent this script to some players from different regions and gathered the results.
+In this brief post, I will go over data I have gathered on South America's routing. The idea was to test connections between different countries in SA to try to find some kind of pattern. I have created a test using the database from here: [https://williamyaps.github.io/wlmjavascript/servercli.html](https://williamyaps.github.io/wlmjavascript/servercli.html). I have created a script that tries PINGing all servers from a few cities in SA and record the results. I have sent this script to some players from different regions and gathered the results.
 
 I have also generated maps showing the gathered data, which you can see below. Values with (+) mean they were the best connections, while values with (-) mean they were the worst connections. In general, consider something close to (+) as the actual value.
 
-You can also find the raw values and the images here: https://github.com/joaorb64/joaorb64.github.io/tree/master/img/post_images/sa-routing/data.
+You can also find the raw values and the images here: [RAW values](https://github.com/joaorb64/joaorb64.github.io/tree/master/img/post_images/sa-routing/data).
 
 Notice that the same company (Telefónica) owns Vivo and Movistar, which probably explains why their connection is so good: they are available in most countries in South America. So it makes sense that this company owns access to multiple different routes.
 
@@ -65,8 +65,8 @@ Terrible routing.
 
 ## Unknown ISP
 
-![]({{image_path}}/data/plot_cl_?.png)
-![]({{image_path}}/data/plot_cl_?2.png)
+![]({{image_path}}/data/plot_cl_unk.png)
+![]({{image_path}}/data/plot_cl_unk2.png)
 
 # COLOMBIA
 
@@ -78,7 +78,7 @@ Bad routing to the rest of South America.
 
 ## Unknown ISP
 
-![]({{image_path}}/data/plot_co_?.png)
+![]({{image_path}}/data/plot_co_unk.png)
 
 # ECUADOR
 
